@@ -7,7 +7,6 @@ import { ReactComponent as Fork } from "../../assets/fork.svg";
 import { ReactComponent as Star } from "../../assets/star.svg";
 import Link from "@mui/material/Link";
 import Divider from "@mui/material/Divider";
-import Button from "@mui/material/Button";
 
 export const ProfileRepo = ({
   id,
@@ -20,6 +19,7 @@ export const ProfileRepo = ({
 }: IProfileRepo) => {
   return (
     <>
+      <Divider />
       <Box display="flex" justifyContent="left" textAlign="left" sx={{ my: 2 }}>
         <Stack>
           <Link
@@ -69,7 +69,6 @@ export const ProfileRepo = ({
           </Stack>
         </Stack>
       </Box>
-      <Divider />
     </>
   );
 };
