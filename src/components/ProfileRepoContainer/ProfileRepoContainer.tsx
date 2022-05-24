@@ -9,6 +9,7 @@ export interface IProfileRepo {
   stargazersCount: number;
   forksCount: number;
   language: string;
+  updatedDate: Date;
 }
 
 export const ProfileRepoContainer = () => {
@@ -44,6 +45,7 @@ export const ProfileRepoContainer = () => {
               stargazersCount={repo.stargazers_count}
               forksCount={repo.forks_count}
               language={repo.language}
+              updatedDate={new Date(repo.updated_at)}
             />
           );
         })}

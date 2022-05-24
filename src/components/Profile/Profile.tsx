@@ -9,7 +9,6 @@ export const Profile = () => {
         Profile Picture
       </Grid>
       <Grid item xs={8}>
-        Profile Information
         <ProfileRepoContainer />
       </Grid>
     </Grid>
