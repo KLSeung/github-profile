@@ -16,7 +16,7 @@ export const ProfileRepoContainer = ({ userRepos }: any) => {
   return (
     <>
       <Container>
-        {userRepos &&
+        {userRepos.length > 0 &&
           userRepos.map((repo: any) => {
             return (
               <ProfileRepo
